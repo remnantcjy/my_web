@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>guest book</title>
+    <style>
+      h1{
+        border-bottom : 1px solid black;
+        background: #e91e1e2e;
+        text-align : center;
+        font-size : 50px;
+        margin : 0;
+        padding : 40px;
+      }
+      a {
+        color : black;
+        text-decoration:none;
+      }
+      body {
+        margin : 0;
+      }
+      #grid {
+        display : grid;
+        grid-template-columns : 270px 1fr;
+      }
+      #grid ul {
+        border-right : 1px solid gray;
+        background-color: #ff002d12;
+        margin: 0;
+        padding-left: 70px;
+        padding-top: 60px;
+        font-size: 17px;
+      }
+      #grid li {
+        padding : 10px;
+      }
+      #in {
+        padding-left: 100px;
+        padding-top: 50px;
+      }
+      #in ul{
+        background: white;
+        padding-top: 0;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1><a href="main.html">yoon's web site</a></h1>
+    <div id="grid">
+    <ul>
+      <li><a href="intro.html">자기소개</a></li>
+      <li><a href="mbti.html">MBTI</a></li>
+      <li><a href="youtuber.html">좋아하는 유튜버</a></li>
+      <li><a href="comment.html">방명록</a></li>
+      <li><a href="chatting.html">채팅하기</a></li>
+    </ul>
+    <div id="grid2">
+    <div id="in">
+    <h2>댓글을 통해 방명록을 남겨보세요 :)</h2>
+    <p>
+    <div id="disqus_thread"></div>
+    <script>
+      /**
+      *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+      *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+      /*
+      var disqus_config = function () {
+      this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      };
+      */
+      (function() { // DON'T EDIT BELOW THIS LINE
+      var d = document, s = d.createElement('script');
+      s.src = 'https://web-ryglbk2lye.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      })();
+  </script>
+  </p>
+  </div>
+  </div>
+  </body>
+</html>
